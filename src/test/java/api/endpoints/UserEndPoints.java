@@ -50,6 +50,7 @@ public class UserEndPoints {
 	public static Response deleteUser(String user_id)
 	{
 		Response response=given()
+			.header("Authorization", "Bearer " + TOKEN)	
 			.pathParam("userid",user_id)
 		.when()
 			.delete(Routes.delete_url);
