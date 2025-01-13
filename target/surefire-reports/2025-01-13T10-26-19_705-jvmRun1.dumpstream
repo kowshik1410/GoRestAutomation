@@ -1,0 +1,5 @@
+# Created at 2025-01-13T10:26:27.575
+Unresolved compilation problem: 
+	The method log(Status, Media) in the type ExtentTest is not applicable for the arguments (Status, StackTraceElement[])
+
+

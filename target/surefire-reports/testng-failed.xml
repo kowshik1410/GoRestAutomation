@@ -8,7 +8,7 @@
     <classes>
       <class name="api.tests.UserTests">
         <methods>
-          <include name="testDeleteUserByid"/>
+          <include name="testDeleteUserById"/>
           <include name="setupData"/>
         </methods>
       </class> <!-- api.tests.UserTests -->
