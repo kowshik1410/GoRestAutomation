@@ -2,13 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<listeners>
-<listener  class-name="api.utilities.ExtentReportManager" />
-</listeners>
-  <test thread-count="5" name="Test">
+  <listeners>
+    <listener class-name="api.utilities.ExtentReportManager" />
+  </listeners>
+  
+  <test name="User Tests">
     <classes>
-      <!--<class name="api.tests.DDTests"/>-->
-      <class name="api.tests.UserTests"/>
+      <!-- Running the test methods in the desired order -->
+      <class name="api.tests.UserTests">
+        <methods>
+          <include name="testPostUser"/>
+          <include name="testGetUserById"/>
+          <include name="testUpdateUserById"/>
+          <include name="testDeleteUserById"/>
+        </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -4,14 +4,14 @@
   <listeners>
     <listener class-name="api.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" verbose="0">
+  <test thread-count="5" name="User Tests(failed)" verbose="0">
     <classes>
       <class name="api.tests.UserTests">
         <methods>
-          <include name="testDeleteUserById"/>
+          <include name="testGetUserById"/>
           <include name="setupData"/>
         </methods>
       </class> <!-- api.tests.UserTests -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- User Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

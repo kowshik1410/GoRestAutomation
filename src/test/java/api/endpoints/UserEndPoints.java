@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import api.payload.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 
 // Created to perform  Create, Read, Update, Delete requests of the user API.  
 public class UserEndPoints {
@@ -26,12 +27,16 @@ public class UserEndPoints {
 
 	public static Response readUser(String user_id)
 	{
-		Response response=given()
-			.header("Authorization", "Bearer " + TOKEN)	
-			.pathParam("userid",user_id)
-		.when()
-			.get(Routes.get_url);
-		return response;
+		ValidatableResponse validatableResponse = given()
+		        .header("Authorization", "Bearer " + TOKEN)    
+		        .pathParam("userid", user_id)
+		    .when()
+		        .get(Routes.get_url)
+		    .then()
+		        .contentType(ContentType.JSON);
+		    
+		    // Extract the response object from the validatable response
+		    return validatableResponse.extract().response();
 	}
 	
 	public static Response updateUser(String user_id,User payload)
