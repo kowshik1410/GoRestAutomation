@@ -9,14 +9,31 @@
   <test name="User Tests">
     <classes>
       <!-- Running the test methods in the desired order -->
-      <class name="api.tests.UserTests">
+      <class name="api.tests.TestPostUser">
         <methods>
           <include name="testPostUser"/>
+        </methods>
+      </class>
+      
+      <class name="api.tests.TestGetUserById">
+        <methods>
           <include name="testGetUserById"/>
+        </methods>
+      </class>
+      
+      <class name="api.tests.TestUpdateUserById">
+        <methods>
           <include name="testUpdateUserById"/>
+        </methods>
+      </class>
+      
+      <class name="api.tests.TestDeleteUserById">
+        <methods>
           <include name="testDeleteUserById"/>
         </methods>
       </class>
+      
     </classes>
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->

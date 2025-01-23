@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Go Rest API</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 14, 2025 09:24:13 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jan 23, 2025 11:24:47 am</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testPostUser</p>
             <p class="text-sm">
-              <span>9:24:14 pm</span> / <span>00:00:03:262</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:24:47 am</span> / <span>00:00:03:366</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testPostUser</h5>
-<span class='badge badge-success'>01.14.2025 9:24:14 pm</span>
-<span class='badge badge-danger'>01.14.2025 9:24:17 pm</span>
-<span class='badge badge-default'>00:00:03:262</span>
+<h5 class="test-status text-fail">testPostUser</h5>
+<span class='badge badge-success'>01.23.2025 11:24:47 am</span>
+<span class='badge badge-danger'>01.23.2025 11:24:50 am</span>
+<span class='badge badge-default'>00:00:03:366</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,37 +105,38 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:14 pm</td>
+        <td>11:24:47 am</td>
         <td>
           Starting testPostUser...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:17 pm</td>
+        <td>11:24:47 am</td>
         <td>
-          Response Body: {"id":7634380,"name":"tasha.bailey","email":"morton.hilpert@yahoo.com","gender":"female","status":"active"}
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"email":"edyth.labadie@gmail.com","gender":"female","status":"inactive","name":"josue.kub"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:17 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:24:50 am</td>
         <td>
-          Validating response code.
+          Test Failed: testPostUser
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:17 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:24:50 am</td>
         <td>
-          User successfully created with ID: 7634380
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:17 pm</td>
-        <td>
-          Test Passed: testPostUser
+          Unrecognized field "id" (class api.payload.User), not marked as ignorable (4 known properties: "gender", "status", "name", "email"])
+ at [Source: (String)"{"id":7651178,"name":"josue.kub","email":"edyth.labadie@gmail.com","gender":"female","status":"inactive"}"; line: 1, column: 14] (through reference chain: api.payload.User["id"])
         </td>
       </tr>
   </tbody>
@@ -149,7 +151,7 @@
           <div class="test-detail">
             <p class="name">testGetUserById</p>
             <p class="text-sm">
-              <span>9:24:17 pm</span> / <span>00:00:01:043</span>
+              <span>11:24:50 am</span> / <span>00:00:01:595</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -158,9 +160,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testGetUserById</h5>
-<span class='badge badge-success'>01.14.2025 9:24:17 pm</span>
-<span class='badge badge-danger'>01.14.2025 9:24:18 pm</span>
-<span class='badge badge-default'>00:00:01:043</span>
+<span class='badge badge-success'>01.23.2025 11:24:50 am</span>
+<span class='badge badge-danger'>01.23.2025 11:24:52 am</span>
+<span class='badge badge-default'>00:00:01:595</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -172,35 +174,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:17 pm</td>
+        <td>11:24:50 am</td>
         <td>
           Starting testGetUserById...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:18 pm</td>
+        <td>11:24:52 am</td>
         <td>
-          Response Body: {"id":7634380,"name":"tasha.bailey","email":"morton.hilpert@yahoo.com","gender":"female","status":"active"}
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:18 pm</td>
-        <td>
-          Validating response code.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:18 pm</td>
-        <td>
-          User fetched successfully.
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({"id":7651178,"name":"josue.kub","email":"edyth.labadie@gmail.com","gender":"female","status":"inactive"}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:18 pm</td>
+        <td>11:24:52 am</td>
+        <td>
+          User fetched successfully with ID: 7651178
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:24:52 am</td>
         <td>
           Test Passed: testGetUserById
         </td>
@@ -217,7 +219,7 @@
           <div class="test-detail">
             <p class="name">testUpdateUserById</p>
             <p class="text-sm">
-              <span>9:24:18 pm</span> / <span>00:00:01:313</span>
+              <span>11:24:52 am</span> / <span>00:00:02:308</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -226,9 +228,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testUpdateUserById</h5>
-<span class='badge badge-success'>01.14.2025 9:24:18 pm</span>
-<span class='badge badge-danger'>01.14.2025 9:24:20 pm</span>
-<span class='badge badge-default'>00:00:01:313</span>
+<span class='badge badge-success'>01.23.2025 11:24:52 am</span>
+<span class='badge badge-danger'>01.23.2025 11:24:54 am</span>
+<span class='badge badge-default'>00:00:02:308</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -240,35 +242,35 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:18 pm</td>
+        <td>11:24:52 am</td>
         <td>
           Starting testUpdateUserById...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:20 pm</td>
+        <td>11:24:54 am</td>
         <td>
-          Response Body: {"email":"gustavo.feest@yahoo.com","name":"tasha.bailey","gender":"female","status":"active","id":7634380}
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:20 pm</td>
-        <td>
-          Validating response code.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:20 pm</td>
-        <td>
-          User email updated successfully.
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"email":"tami.lynch@hotmail.com","name":"gonzalo.keebler","gender":"male","status":"inactive","id":7651178}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:20 pm</td>
+        <td>11:24:54 am</td>
+        <td>
+          User updated successfully with ID: 7651178
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:24:54 am</td>
         <td>
           Test Passed: testUpdateUserById
         </td>
@@ -285,7 +287,7 @@
           <div class="test-detail">
             <p class="name">testDeleteUserById</p>
             <p class="text-sm">
-              <span>9:24:20 pm</span> / <span>00:00:01:204</span>
+              <span>11:24:54 am</span> / <span>00:00:01:299</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -294,9 +296,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">testDeleteUserById</h5>
-<span class='badge badge-success'>01.14.2025 9:24:20 pm</span>
-<span class='badge badge-danger'>01.14.2025 9:24:21 pm</span>
-<span class='badge badge-default'>00:00:01:204</span>
+<span class='badge badge-success'>01.23.2025 11:24:54 am</span>
+<span class='badge badge-danger'>01.23.2025 11:24:56 am</span>
+<span class='badge badge-default'>00:00:01:299</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -308,35 +310,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:20 pm</td>
+        <td>11:24:54 am</td>
         <td>
           Starting testDeleteUserById...
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:21 pm</td>
+        <td>11:24:56 am</td>
         <td>
           Response Body: 
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:24:21 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:24:56 am</td>
         <td>
-          Validating response code.
+          User deleted successfully with ID: 7651178
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:21 pm</td>
-        <td>
-          User deleted successfully.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:24:21 pm</td>
+        <td>11:24:56 am</td>
         <td>
           Test Passed: testDeleteUserById
         </td>
@@ -360,25 +355,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 14, 2025 09:24:13 pm</h3>
+<h3>Jan 23, 2025 11:24:47 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 14, 2025 09:24:21 pm</h3>
+<h3>Jan 23, 2025 11:24:56 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -394,12 +389,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> tests passed
+<div><small data-tooltip='75%'>
+<b>3</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='25%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -417,10 +412,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='40%'><b>8</b> events passed</small></div>
+<div><small data-tooltip='37%'><b>6</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>12</b> others
+<small data-tooltip='12%'><b>2</b> events failed,
+<b data-tooltip='%'>8</b> others
 </small>
 </div>
 </div>
@@ -436,7 +431,7 @@
 </div></div>
 <script>
 var timeline = {
-"testPostUser":3.262,"testGetUserById":1.043,"testUpdateUserById":1.313,"testDeleteUserById":1.204
+"testPostUser":3.366,"testGetUserById":1.595,"testUpdateUserById":2.308,"testDeleteUserById":1.299
 };
 </script>
 <div class="row">
@@ -471,8 +466,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 0,
+passParent: 3,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -488,11 +483,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 8,
-failEvents: 0,
+passEvents: 6,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 12
+infoEvents: 8
 };
 </script>        </div>
       </div>

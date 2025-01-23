@@ -12,7 +12,7 @@ public class UserEndPoints {
 	
 	private static final String TOKEN = "f862a1c5f12a1b107322e1e8f07fa14fcb1375f74203d7ca411ef2edcb2a03eb";
 	
-	public static Response createUser(User payload)
+	public static Response createUser(String payload)
 	{
 		Response response=given()
 			.header("Authorization", "Bearer " + TOKEN)	
@@ -25,7 +25,7 @@ public class UserEndPoints {
 		
 	}
 
-	public static Response readUser(String user_id)
+	public static Response readUser(int user_id)
 	{
 		ValidatableResponse validatableResponse = given()
 		        .header("Authorization", "Bearer " + TOKEN)    
@@ -39,7 +39,7 @@ public class UserEndPoints {
 		    return validatableResponse.extract().response();
 	}
 	
-	public static Response updateUser(String user_id,User payload)
+	public static Response updateUser(int user_id,User payload)
 	{
 		Response response=given()
 			.header("Authorization", "Bearer " + TOKEN)	
@@ -52,7 +52,7 @@ public class UserEndPoints {
 		return response;
 	}
 
-	public static Response deleteUser(String user_id)
+	public static Response deleteUser(int user_id)
 	{
 		Response response=given()
 			.header("Authorization", "Bearer " + TOKEN)	
@@ -61,5 +61,6 @@ public class UserEndPoints {
 			.delete(Routes.delete_url);
 		return response;
 	}
+
 
 }

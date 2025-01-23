@@ -2,32 +2,74 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-14T21:24:13 IST" name="Suite" finished-at="2025-01-14T21:24:21 IST" duration-ms="7564">
+  <suite started-at="2025-01-23T12:59:43 IST" name="Suite" finished-at="2025-01-23T12:59:54 IST" duration-ms="11308">
     <groups>
     </groups>
-    <test started-at="2025-01-14T21:24:13 IST" name="User Tests" finished-at="2025-01-14T21:24:21 IST" duration-ms="7564">
-      <class name="api.tests.UserTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.UserTests@7e07db1f]" started-at="2025-01-14T21:24:13 IST" name="setupData" finished-at="2025-01-14T21:24:14 IST" duration-ms="550" status="PASS">
+    <test started-at="2025-01-23T12:59:43 IST" name="User Tests" finished-at="2025-01-23T12:59:54 IST" duration-ms="11308">
+      <class name="api.tests.TestGetUserById">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.TestGetUserById@49ec71f8]" started-at="2025-01-23T12:59:47 IST" name="setupData" finished-at="2025-01-23T12:59:47 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method signature="testPostUser()[pri:0, instance:api.tests.UserTests@7e07db1f]" started-at="2025-01-14T21:24:14 IST" name="testPostUser" finished-at="2025-01-14T21:24:17 IST" duration-ms="3264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserById()[pri:0, instance:api.tests.UserTests@7e07db1f]" started-at="2025-01-14T21:24:17 IST" name="testGetUserById" finished-at="2025-01-14T21:24:18 IST" duration-ms="1042" status="PASS">
+        <test-method signature="testGetUserById(org.testng.ITestContext)[pri:0, instance:api.tests.TestGetUserById@49ec71f8]" started-at="2025-01-23T12:59:47 IST" name="testGetUserById" finished-at="2025-01-23T12:59:49 IST" duration-ms="1734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fe07361]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUserById -->
-        <test-method signature="testUpdateUserById()[pri:0, instance:api.tests.UserTests@7e07db1f]" started-at="2025-01-14T21:24:18 IST" name="testUpdateUserById" finished-at="2025-01-14T21:24:20 IST" duration-ms="1314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateUserById -->
-        <test-method signature="testDeleteUserById()[pri:0, instance:api.tests.UserTests@7e07db1f]" started-at="2025-01-14T21:24:20 IST" name="testDeleteUserById" finished-at="2025-01-14T21:24:21 IST" duration-ms="1203" status="PASS">
+      </class> <!-- api.tests.TestGetUserById -->
+      <class name="api.tests.TestDeleteUserById">
+        <test-method signature="testDeleteUserById(org.testng.ITestContext)[pri:0, instance:api.tests.TestDeleteUserById@6b00f608]" started-at="2025-01-23T12:59:52 IST" name="testDeleteUserById" finished-at="2025-01-23T12:59:54 IST" duration-ms="1845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fe07361]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserById -->
-      </class> <!-- api.tests.UserTests -->
+      </class> <!-- api.tests.TestDeleteUserById -->
+      <class name="api.tests.TestUpdateUserById">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.TestUpdateUserById@1d2adfbe]" started-at="2025-01-23T12:59:49 IST" name="setupData" finished-at="2025-01-23T12:59:49 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testUpdateUserById(org.testng.ITestContext)[pri:0, instance:api.tests.TestUpdateUserById@1d2adfbe]" started-at="2025-01-23T12:59:49 IST" name="testUpdateUserById" finished-at="2025-01-23T12:59:52 IST" duration-ms="3045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fe07361]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserById -->
+      </class> <!-- api.tests.TestUpdateUserById -->
+      <class name="api.tests.TestPostUser">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.TestPostUser@478190fc]" started-at="2025-01-23T12:59:43 IST" name="setupData" finished-at="2025-01-23T12:59:43 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testPostUser(org.testng.ITestContext)[pri:0, instance:api.tests.TestPostUser@478190fc]" started-at="2025-01-23T12:59:43 IST" name="testPostUser" finished-at="2025-01-23T12:59:47 IST" duration-ms="4250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fe07361]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+      </class> <!-- api.tests.TestPostUser -->
     </test> <!-- User Tests -->
   </suite> <!-- Suite -->
 </testng-results>
